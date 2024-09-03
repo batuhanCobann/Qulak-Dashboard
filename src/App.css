@@ -76,7 +76,7 @@
 
  
 .main-content.shifted {
-  margin-left: 0; /* Offcanvas menü açıldığında içeriği sağa kaydır */
+  margin-left: 0; 
 }
 
 
@@ -116,19 +116,19 @@
 
 
 
-/* OffcanvasMenu.css */
+
 .offcanvas-wrapper {
   display: flex;
   gap: 20px;
-  position: relative; /* Kapsayıcıyı göreceli olarak konumlandır */
-  overflow: hidden; /* Taşmaları gizle */
+  position: relative; 
+  overflow: hidden; 
   background-color: var(---bg-color);
   width: 100%;
 
 }
 
 .offcanvas-container {
-  position: absolute; /* Offcanvas menüyü göreceli olarak konumlandır */
+  position: absolute; 
   top: 0;
   left: 0;
   width: 250px;
@@ -166,20 +166,20 @@
 .offcanvas-menu {
   position: fixed;
   top: 0;
-  right: 0; /* Menü sağdan açılacak */
+  right: 0; 
   max-width: 300px;
   width: 100%;
   height: 100vh;
   background-color:var(---bg-div);
   color: #fff;
-  transform: translateX(100%); /* Sağdan açılması için başlangıçta tamamen gizli */
+  transform: translateX(100%); 
   transition: transform 0.3s ease;
   z-index: 1000;
-  box-shadow: -2px 0 5px rgba(0,0,0,0.5); /* Gölgeyi sağ tarafa ekle */
+  box-shadow: -2px 0 5px rgba(0,0,0,0.5); 
 }
 
 .offcanvas-menu.open {
-  transform: translateX(0); /* Açıldığında sağa kaydır */
+  transform: translateX(0); 
 }
 
 .offcanvas-toggle {
@@ -549,7 +549,7 @@
 
 
   .main-content.shifted {
-    margin-left: 300px; /* Offcanvas menü açıldığında içeriği sağa kaydır */
+    margin-left: 300px; 
   }
 
 
