@@ -14,6 +14,20 @@ export default function Dashboard(){
       setIsOpenOffcanvas(!isOpenOffcanvas);
     };
 
+
+    const openToggleOffcanvass = () => {
+        setIsOpenOffcanvas(true);
+      };
+    
+      const closeToggleOffcanvass = () => {
+        setIsOpenOffcanvas(false);
+      };
+
+
+
+
+
+
     const toggleOffcanvas = () => {
         setIsOpen(!isOpen);
       };
@@ -151,11 +165,23 @@ export default function Dashboard(){
             <div  className="div1 d-grid align-content-between">
                 <div className='div1-1'>
                     <ul className="sidebar-ul d-grid gap-4 py-4 px-4 ">
-                        <li onClick={toggleOffcanvass}>{isDarkMode ? <img src="dark-logo-1.svg" alt="" /> : <img src="light-logo-1.svg" alt="" />}</li>
-                        <li onClick={() => setActiveContentSidebar(1)}>{isDarkMode ? <img src="dark-logo-2.svg" alt="" /> : <img src="light-logo-2.svg" alt="" />}</li>
-                        <li onClick={() => setActiveContentSidebar(2)}>{isDarkMode ? <img src="dark-logo-3.svg" alt="" /> : <img src="light-logo-3.svg" alt="" />}</li>
-                        <li onClick={() => setActiveContentSidebar(3)}>{isDarkMode ? <img src="dark-logo-4.svg" alt="" /> : <img src="light-logo-4.svg" alt="" />}</li>
-                        <li onClick={() => setActiveContentSidebar(4)}>{isDarkMode ? <img src="dark-logo-5.svg" alt="" /> : <img src="light-logo-5.svg" alt="" />}</li>
+                        <li onClick={toggleOffcanvass} >{isDarkMode ? <img src="dark-logo-1.svg" alt="" /> : <img src="light-logo-1.svg" alt="" />}</li>
+                        <li onClick={() => { 
+                            setActiveContentSidebar(1)
+                            openToggleOffcanvass() 
+                        }}>{isDarkMode ? <img src="dark-logo-2.svg" alt="" /> : <img src="light-logo-2.svg" alt="" />}</li>
+                        <li onClick={() => { 
+                            setActiveContentSidebar(2)
+                            openToggleOffcanvass() 
+                        }}>{isDarkMode ? <img src="dark-logo-3.svg" alt="" /> : <img src="light-logo-3.svg" alt="" />}</li>
+                        <li onClick={() => {
+                            setActiveContentSidebar(3)
+                            openToggleOffcanvass() 
+                            }}>{isDarkMode ? <img src="dark-logo-4.svg" alt="" /> : <img src="light-logo-4.svg" alt="" />}</li>
+                        <li onClick={() => {
+                            setActiveContentSidebar(4)
+                            openToggleOffcanvass()
+                            }}>{isDarkMode ? <img src="dark-logo-5.svg" alt="" /> : <img src="light-logo-5.svg" alt="" />}</li>
                     </ul>
                 </div>
                 <div className='div1-2'>
@@ -175,7 +201,7 @@ export default function Dashboard(){
                         <div className="div2 h-100 p-4 d-grid align-content-between">
                             <div className='div2-1'>
                                 <div className="sidebar-content-header">
-                                    <h3 onClick={toggleOffcanvass} className="d-flex gap-2 btn streched-link">{isDarkMode ? <img src="dark-back-logo.svg" alt="" /> : <img src="light-back-logo.svg" alt="" />}Lookscout Dashboard</h3> 
+                                    <h3 onClick={closeToggleOffcanvass} className="d-flex gap-2">{isDarkMode ? <img src="dark-back-logo.svg" alt="" /> : <img src="light-back-logo.svg" alt="" />}Lookscout Dashboard</h3> 
                                     <input className="sidebar-input mt-3" type="text" />
                                 </div>
                                 <div className="sidebar-content-body d-grid gap-3 mt-5">

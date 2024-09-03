@@ -567,6 +567,7 @@
         font-size: 14px;
         font-weight: 600;
         line-height: 24px;
+        cursor: pointer;
     } 
   }
   
@@ -624,6 +625,7 @@
     background-color: var(---bg-div);
     border-bottom: none;
     display: grid;
+    width: 80px;
   }
   .div2{display: block;}
   .div2-1{display: block;}
