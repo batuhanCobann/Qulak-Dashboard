@@ -9,19 +9,34 @@ const ColumnChart = () => {
     },
     plotOptions: {
       bar: {
-        borderRadius: 5,
-        columnWidth: '50%',
+        borderRadius: 0,
+        columnWidth: '20%',
       },
     },
     dataLabels: {
       enabled: false,
     },
     xaxis: {
-      categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+      categories: ['Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar'],
+      labels: {
+        style: {
+          colors: 'var(---font-color)', 
+          fontSize: '14px',
+        },
+      },
     },
     yaxis: {
       title: {
-        text: 'Revenue (in USD)',
+        text: 'Revenue (%)',
+      },
+      labels: {
+        formatter: function (value) {
+          return value + "%";
+        },
+        style: {
+          colors: 'var(---font-color)', 
+          fontSize: '14px',
+        },
       },
     },
     title: {
@@ -31,15 +46,18 @@ const ColumnChart = () => {
       style: {
         fontSize: '20px',
         fontWeight: 'bold',
-        color: 'var(---font-color)',
+        color: 'var(---font-color)', 
       },
     },
+    colors: ['#437EF7'], 
   };
+
 
   const series = [
     {
       name: 'Revenue',
-      data: [35000, 42000, 48000, 52000, 61000, 68000, 72000, 83000, 90000, 95000, 102000, 110000],
+      data: [30, 20, 74, 80, 10, 110, 85, 30, 75, 70, 20, 100]
+        .map(value => (value / 100) * 20), // Bu örnekte 110000 en yüksek değer olarak alındı
     },
   ];
 
