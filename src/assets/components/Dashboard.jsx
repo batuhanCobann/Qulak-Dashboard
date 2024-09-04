@@ -185,11 +185,11 @@ export default function Dashboard(){
                     </ul>
                 </div>
                 <div className='div1-2'>
-                    <ul className="sidebar-ul d-grid gap-4 py-4 px-4">
-                        <li onClick={toggleMode} className="dark-light-mode-btn s btn streched-link d-flex gap-2">{isDarkMode ? <img src="dark-mode.svg" alt="" /> : <img src="light-mode.svg" alt="" />}</li>
-                        <li>{isDarkMode ? <img src="dark-logo-6.svg" alt="" /> : <img src="light-logo-6.svg" alt="" />}</li>
-                        <li>{isDarkMode ? <img src="dark-logo-7.svg" alt="" /> : <img src="light-logo-7.svg" alt="" />}</li>
-                    </ul>
+                    <div className="sidebar-ul d-grid gap-4 py-4 px-4">
+                        <p onClick={toggleMode} className="text-center">{isDarkMode ? <img src="dark-mode.svg" alt="" /> : <img src="light-mode.svg" alt="" />}</p>
+                        <p>{isDarkMode ? <img src="dark-logo-6.svg" alt="" /> : <img src="light-logo-6.svg" alt="" />}</p>
+                        <p>{isDarkMode ? <img src="dark-logo-7.svg" alt="" /> : <img src="light-logo-7.svg" alt="" />}</p>
+                    </div>
                 </div>
             </div>
             <div className="offcanvas-wrapper">
@@ -427,7 +427,7 @@ export default function Dashboard(){
                                             </div>
                                             <div className="list-group-item-footer d-flex gap-2">
                                                 <p className=" text-primary">Online </p> {/* düzenlendi */}
-                                                <span>{isDarkMode? <img src="dark-icon.svg" alt="" /> : <img src="Icon.svg" alt="" />}</span>
+                                                <span>{isDarkMode? <img src="right-dark.svg" alt="" /> : <img src="right-light.svg" alt="" />}</span>
                                             </div>
                                         </li> 
                     {/* ---------------------------------------------------------------------------------------------------------------------------- */}
@@ -442,7 +442,7 @@ export default function Dashboard(){
                                                 </div>
                                             </div>
                                             <div className="list-group-item-footer d-flex gap-2">
-                                                <p className="d-flex gap-3 text-primary">Online </p><span>{isDarkMode? <img src="dark-icon.svg" alt="" /> : <img src="Icon.svg" alt="" />}</span>
+                                                <p className="d-flex gap-3 text-primary">Online </p><span>{isDarkMode? <img src="right-dark.svg" alt="" /> : <img src="right-light.svg" alt="" />}</span>
                                             </div>
                                         </li> 
                     {/* ---------------------------------------------------------------------------------------------------------------------------- */}
@@ -457,7 +457,7 @@ export default function Dashboard(){
                                                 </div>
                                             </div>
                                             <div className="list-group-item-footer d-flex gap-2">
-                                                <p className="d-flex gap-3 text-dark">Offline</p> <span>{isDarkMode? <img src="dark-icon.svg" alt="" /> : <img src="Icon.svg" alt="" />}</span>
+                                                <p className="d-flex gap-3 text-dark">Offline</p> <span>{isDarkMode? <img src="right-dark.svg" alt="" /> : <img src="right-light.svg" alt="" />}</span>
                                             </div>
                                         </li> 
                     {/* ---------------------------------------------------------------------------------------------------------------------------- */}
@@ -472,7 +472,7 @@ export default function Dashboard(){
                                                 </div>
                                             </div>
                                             <div className="list-group-item-footer d-flex gap-2">
-                                                <p className="d-flex gap-3 text-dark">Offline </p><span>{isDarkMode? <img src="dark-icon.svg" alt="" /> : <img src="Icon.svg" alt="" />}</span>
+                                                <p className="d-flex gap-3 text-dark">Offline </p><span>{isDarkMode? <img src="right-dark.svg" alt="" /> : <img src="right-light.svg" alt="" />}</span>
                                             </div>
                                         </li> 
                     {/* ---------------------------------------------------------------------------------------------------------------------------- */}
@@ -487,7 +487,7 @@ export default function Dashboard(){
                                                 </div>
                                             </div>
                                             <div className="list-group-item-footer d-flex gap-2">
-                                                <p className="d-flex gap-3 text-primary">Online </p><span>{isDarkMode? <img src="dark-icon.svg" alt="" /> : <img src="Icon.svg" alt="" />}</span>
+                                                <p className="d-flex gap-3 text-primary">Online </p><span>{isDarkMode? <img src="dark-icon.svg" alt="" /> : <img src="right-light.svg" alt="" />}</span>
                                             </div>
                                         </li> 
                     {/* ---------------------------------------------------------------------------------------------------------------------------- */}
